@@ -10,6 +10,10 @@ const {postRoute} = require("./Routes/Post");
 app.use("/user", postRoute);
 
 
+app.get("/",(res,req)=>{
+    res.send("Welcome to my Cyclic Backend!!")
+});
+
 
 app.listen(process.env.PORT,async()=>{
     try{
